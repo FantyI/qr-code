@@ -1,0 +1,10 @@
+p{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+}
+
+span{
+    font-size: 26px;
+}
