@@ -1,6 +1,7 @@
 import {QRCodeSVG} from 'qrcode.react'; 
 import { useState } from 'react';
 import { Generate } from "../LocalValue";
+
 const QrCodeGenerate = () => {
 
     const [value, setValue] = useState('')
@@ -20,7 +21,7 @@ const QrCodeGenerate = () => {
 
     return (
         <div>
-            {condition && < QRCodeSVG value={condition} />}
+            {condition && < QRCodeSVG value={condition}/>}
             <input type="text" value={value} onChange={Change}/>
             <button onClick={Click} >Генирировать Qr Code</button>
         </div>
